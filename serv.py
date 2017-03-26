@@ -1,6 +1,9 @@
-# Trabalho Pratico 0 - Redes de Computadores 2017/1
 # Universidade Ferderal de Minas Gerais
+# DCC023 - Redes de Computadores 2017/1
+# Trabalho Pratico 0
+
 # Codigo por Alison de Oliveira Souza - 2012049316
+# Servidor
 
 # Para executar basta rodar python serv.py
 
@@ -54,10 +57,6 @@ while True:
 	confirm2 = con.recv(1)
 	confirm3 = con.recv(1)
 	confirmacao = confirm1 + confirm2 + confirm3
-	# REMOVER ESSES PRINTS ANTES DE ENVIAR!
-	#print 'confirm1: ', confirm1
-	#print 'confirm2: ', confirm2
-	#print 'confirm3: ', confirm3
 	
 	# Verificando se a mensagem do cliente confere com o contador.
 	if int(confirmacao) == contador:
